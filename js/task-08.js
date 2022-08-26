@@ -2,9 +2,8 @@ let form = document.querySelector(".login-form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const {
-    elements: { email, password },
-  } = e.currentTarget;
+
+  const { email, password } = e.currentTarget.elements;
 
   if (email.value === "" || password.value === "") {
     return alert("Введите логин и пароль");

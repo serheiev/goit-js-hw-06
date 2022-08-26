@@ -26,16 +26,14 @@ const images = [
 let gallery = document.querySelector(".gallery");
 
 let addImagesToList = (images) => {
-  images.map(({ url, alt }) => {
-    let imagePattern = `<li class = "item"><img class = "img" width = '300' src = '${url}' alt = '${alt}'></li>`;
+  let allItems = images.map(({ url, alt }) => {
+    let imagePattern = `<li class = "item"><img class = "img" width = '300' 
+    src = '${url}' alt = '${alt}'></li>`;
 
-    let imageAdd = gallery.insertAdjacentHTML("beforeend", imagePattern);
-
-    return imageAdd;
+    return imagePattern;
   });
+  gallery.insertAdjacentHTML("beforeend", allItems);
 };
-
-let getGalleryStyles = () => {};
 
 addImagesToList(images);
 gallery.style.display = "flex";

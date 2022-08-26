@@ -1,10 +1,8 @@
-let inp = document.querySelector("#name-input");
-let out = document.querySelector("#name-output");
+let userNameInput = document.querySelector("#name-input");
+let userNameOutput = document.querySelector("#name-output");
 
-inp.addEventListener("input", () => {
-  if (inp.value == "") {
-    out.textContent = "Anonymous";
-  } else {
-    out.textContent = inp.value;
-  }
+userNameInput.addEventListener("input", () => {
+  userNameInput.value == ""
+    ? (userNameOutput.textContent = "Anonymous")
+    : (userNameOutput.textContent = userNameInput.value);
 });
