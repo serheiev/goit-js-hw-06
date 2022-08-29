@@ -1,5 +1,5 @@
-let userNameInput = document.querySelector("#name-input");
-let userNameOutput = document.querySelector("#name-output");
+const userNameInput = document.querySelector("#name-input");
+const userNameOutput = document.querySelector("#name-output");
 
 userNameInput.addEventListener("input", () => {
   userNameInput.value == ""

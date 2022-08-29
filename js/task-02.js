@@ -6,10 +6,10 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-let list = document.querySelector("#ingredients");
+const list = document.querySelector("#ingredients");
 
 const ingredientArr = ingredients.map((ingredient) => {
-  let itemIngridient = document.createElement("li");
+  const itemIngridient = document.createElement("li");
   itemIngridient.textContent = ingredient;
   return itemIngridient;
 });
